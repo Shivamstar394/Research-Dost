@@ -1,0 +1,26 @@
+# env
+.env
+*.env
+.env.*
+
+# python
+backend/venv/
+**/__pycache__/
+*.pyc
+
+# node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# misc
+.DS_Store
+.vscode/
+
+# windows junk
+desktop.ini
+Thumbs.db
+
+# runtime cache files
+backend/data/*cache*.json
+backend/data/wikidata_conferences_cache.json
