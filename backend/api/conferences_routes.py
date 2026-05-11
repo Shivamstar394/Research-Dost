@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from datetime import date, datetime
 from pathlib import Path
 from typing import Optional, List, Dict
-from services.wikidata_conferences import get_live_conferences
+from services.openreview_conference import get_live_conferences
 import json
 
 router = APIRouter(tags=["Conferences"])

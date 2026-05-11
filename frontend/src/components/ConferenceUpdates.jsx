@@ -194,6 +194,14 @@ export default function ConferenceUpdates() {
     >
       Indian CFPs ↗
     </a>
+    <a
+  href="https://openreview.net/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="explore-cfp-btn"
+>
+  Explore More CFPs ↗
+</a>
   </div>
 </div>
 
