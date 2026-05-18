@@ -6,7 +6,7 @@ python-dotenv==1.0.0
 
 # LLM and AI - FIXED VERSIONS
 anthropic==0.30.1
-torch==2.1.2
+torch==2.9.0
 transformers==4.41.2
 sentence-transformers==2.7.0
 
