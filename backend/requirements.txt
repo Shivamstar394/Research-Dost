@@ -4,6 +4,8 @@ uvicorn[standard]==0.24.0
 pydantic==2.5.2
 python-dotenv==1.0.0
 
+python-jose[cryptography]==3.3.0
+
 # LLM and AI - FIXED VERSIONS
 anthropic==0.30.1
 torch==2.9.0
