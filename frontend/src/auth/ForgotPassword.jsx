@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 export default function ForgotPassword() {
-
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 const [email,setEmail] = useState("");
 const [loading,setLoading] = useState(false);
 const navigate = useNavigate();
@@ -10,7 +11,7 @@ const handleSendOTP = async () => {
 
 setLoading(true);
 
-const res = await fetch("http://localhost:8000/auth/request-otp",{
+const res = await fetch(`${API_BASE}/auth/request-otp`,{
 method:"POST",
 headers:{"Content-Type":"application/json"},
 body:JSON.stringify({email})

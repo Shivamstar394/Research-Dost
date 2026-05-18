@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthLayout from "./AuthLayout";
-
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 export default function ResetPassword() {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -21,7 +22,7 @@ export default function ResetPassword() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/auth/reset-password", {
+      const res = await fetch(`${API_BASE}/auth/reset-password`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password: newPassword }),
