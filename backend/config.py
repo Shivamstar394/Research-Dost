@@ -36,7 +36,7 @@ class Settings:
     API_TITLE = "Autonomous Research Agent API"
     API_VERSION = "1.0.0"
     DEBUG = os.getenv("DEBUG", "False").lower() == "true"
-    CORS_ORIGINS = ["http://localhost:3000", "http://localhost:5173"]
+    CORS_ORIGINS = ["http://localhost:3000", "http://localhost:5173", "https://research-dost-frontend.onrender.com"]
 
     # Caching
     ENABLE_CACHE = True
